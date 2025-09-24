@@ -1,0 +1,110 @@
+.news-page {
+    padding-top: 14vh;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+    color: #e0e0e0; /* soft white text */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Breadcrumb / Header */
+.news-header div {
+    display: flex;
+    padding-left: 1vw;
+    gap: 5px;
+    color: #c0a067;
+}
+
+.news-header div p {
+    cursor: pointer;
+    color: #c0a067;
+    font-weight: 500;
+}
+
+.news-header div p:hover {
+    color: #ffd580;
+}
+
+.news-header h3 {
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #c0a067;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Main Articles Grid */
+.news-articles {
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    justify-content: space-evenly;
+    row-gap: 3vh;
+}
+
+.news-article {
+    cursor: pointer;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(192, 160, 103, 0.2);
+    transition: all 0.4s ease;
+}
+
+.news-article:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0px 6px 18px rgba(192, 160, 103, 0.4);
+}
+
+.news-article img {
+    width: 100%;
+    height: 28vh;
+    object-fit: cover;
+    border-bottom: 2px solid #c0a067;
+}
+
+.news-article p {
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+/* Pagination */
+.pagination-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.pagination-container p {
+    color: #c0a067;
+    font-weight: 600;
+}
+
+.page-item {
+    margin: 0 3px;
+}
+
+.page-link {
+    background: #1a1a1a !important;
+    border: 1px solid #c0a067 !important;
+    color: #c0a067 !important;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background: #c0a067 !important;
+    color: #1a1a1a !important;
+}
+
+.page-item.active .page-link {
+    background: #c0a067 !important;
+    color: #1a1a1a !important;
+    border-color: #c0a067 !important;
+}

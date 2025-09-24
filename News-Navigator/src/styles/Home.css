@@ -1,0 +1,31 @@
+.Home {
+    padding: 15vh 0 0 0;
+    background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%); /* deep black gradient */
+    color: #e0e0e0; /* soft white text */
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.Home::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.home-components {
+    display: grid;
+    grid-template-columns: 23% 70%;
+    gap: 4%;
+}
+
+.home-components > * {
+    background-color: #1a1a1a; /* dark card background */
+    border: 1px solid #c0a067; /* gold accents */
+    border-radius: 0.6rem;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+
+.home-components > *:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0px 6px 18px rgba(192, 160, 103, 0.3); /* subtle gold glow */
+}

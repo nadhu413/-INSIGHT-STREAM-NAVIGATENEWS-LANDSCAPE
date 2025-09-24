@@ -1,0 +1,65 @@
+.top-stories-container {
+    margin-left: 2vw;
+    padding: 4vh 0;
+}
+
+.top-stories-container h3 {
+    font-size: 1.8rem;
+    color: #c0a067; /* gold heading */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2vh;
+}
+
+.top-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.top-story {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1a1a1a; /* dark card background */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #c0a067; /* gold border */
+    transition: all 0.4s ease;
+}
+
+.top-story:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 18px rgba(192, 160, 103, 0.3); /* subtle gold glow */
+}
+
+.top-story img {
+    width: 150px !important;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    border: 1px solid #c0a067; /* gold accent */
+}
+
+.top-story p {
+    font-size: 0.8rem;
+    color: #e0e0e0; /* soft white text */
+    margin: 0;
+}
+
+.top-stories button {
+    background-color: #1a1a1a; /* dark button background */
+    border: 1px solid #c0a067; /* gold border */
+    color: #c0a067; /* gold text */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.top-stories button:hover {
+    background-color: #c0a067; /* gold background */
+    color: #1a1a1a; /* dark text on hover */
+}
